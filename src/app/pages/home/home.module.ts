@@ -4,6 +4,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgChartsModule } from 'ng2-charts';
 import { SwiperModule } from 'swiper/angular';
 
+/* Own Modules */
+import { SharedModule } from 'src/app/shared/shared.module';
+
 /* Routing */
 import { HomeRoutingModule } from './home-routing.module';
 
@@ -43,6 +46,7 @@ import { SummaryComponent } from './components/summary/summary.component';
     NgChartsModule,
     FontAwesomeModule,
     SwiperModule,
+    SharedModule
   ],
 })
 export class HomeModule {}

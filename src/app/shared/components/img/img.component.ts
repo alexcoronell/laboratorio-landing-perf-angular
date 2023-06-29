@@ -29,27 +29,27 @@ export class ImgComponent implements AfterContentInit {
     const name = splitName.pop()
     this.sources = [
       {
-        path: `${path}/${name}-large.webp`,
-        media: '(min-width: 2000px)'
-      },
-      {
-        path: `${path}/${name}-medium.webp`,
-        media: '(min-width: 2000px)'
-      },
-      {
-        path: `${path}/${name}-small.webp`,
-        media: '(min-width: 200px)'
-      },
-      {
         path: `${path}/${name}-large.${ext}`,
         media: '(min-width: 2000px)'
       },
       {
         path: `${path}/${name}-medium.${ext}`,
-        media: '(min-width: 2000px)'
+        media: '(min-width: 640px)'
       },
       {
         path: `${path}/${name}-small.${ext}`,
+        media: '(min-width: 200px)'
+      },
+      {
+        path: `${path}/${name}-large.webp`,
+        media: '(min-width: 2000px)'
+      },
+      {
+        path: `${path}/${name}-medium.webp`,
+        media: '(min-width: 640px)'
+      },
+      {
+        path: `${path}/${name}-small.webp`,
         media: '(min-width: 200px)'
       },
     ]
