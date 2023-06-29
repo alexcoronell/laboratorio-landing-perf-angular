@@ -17,6 +17,9 @@ import { CustomersComponent } from './components/customers/customers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 
+/* Pipes */
+import { TimeAgo } from './pipes/time-ago.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,8 @@ import { HomeComponent } from './pages/home/home.component';
     IntegrationsComponent,
     CustomersComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    TimeAgo,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,6 @@ import { HomeComponent } from './pages/home/home.component';
     SwiperModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
