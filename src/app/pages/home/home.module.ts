@@ -8,7 +8,7 @@ import { SwiperModule } from 'swiper/angular';
 import { HomeRoutingModule } from './home-routing.module';
 
 /* Pipes */
-import { TimeAgo } from 'src/app/pipes/time-ago.pipe';
+import { TimeAgo } from 'src/app/shared/pipes/time-ago.pipe';
 
 /* Components */
 import { HomeComponent } from '../../pages/home/home.component';
